@@ -1,4 +1,74 @@
 ul{
     margin: 0 auto;
-    width: 150px;
+    width: 200px;
+    
+}
+
+
+/* Container styling */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    color: #bb86fc;
+    border-bottom: 2px solid #2c2c2c;
+    padding-bottom: 10px;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 450px;
+}
+
+li {
+    background-color: #1d1d1d;
+    margin: 12px 0;
+    padding: 12px 16px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes buttons to the right */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Button styling */
+button {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border: 1px solid #444;
+    padding: 6px 12px;
+    margin-left: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #3d3d3d;
+}
+
+/* Specific hover effects for action buttons */
+button:text-slice, button:first-of-type:hover {
+    background-color: #cf6679; /* Soft red for delete */
+    border-color: #cf6679;
+    color: #000;
+}
+
+button:last-of-type:hover {
+    background-color: #03dac6; /* Teal for done */
+    border-color: #03dac6;
+    color: #000;
 }
